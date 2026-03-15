@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AAA</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>langchain-youtube-rag</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7604,19 +7604,26 @@ This project builds a system that allows users to ask questions about the conten
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0eb39b3c">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9dd22495">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="YouTube-Videos-Used">YouTube Videos Used<a class="anchor-link" href="#YouTube-Videos-Used">¶</a></h2><p>The following videos were used for testing the system:</p>
+<h2 id="YouTube-Videos-Used">YouTube Videos Used<a class="anchor-link" href="#YouTube-Videos-Used">¶</a></h2><p>The following YouTube videos were used to test the question-answering system. These videos contain explanations related to artificial intelligence and machine learning concepts.</p>
 <ol>
-<li>Video 1: [Paste YouTube Link Here]</li>
-<li>Video 2: [Paste YouTube Link Here]</li>
-<li>Video 3: [Paste YouTube Link Here]</li>
+<li><p><strong>But what is a Neural Network? | Deep Learning, Chapter 1</strong><br/>
+<a href="https://www.youtube.com/watch?v=aircAruvnKk">https://www.youtube.com/watch?v=aircAruvnKk</a></p>
+</li>
+<li><p><strong>Gradient Descent, Step-by-Step</strong><br/>
+<a href="https://www.youtube.com/watch?v=IHZwWFHWa-w">https://www.youtube.com/watch?v=IHZwWFHWa-w</a></p>
+</li>
+<li><p><strong>Neural Networks and Deep Learning Overview</strong><br/>
+<a href="https://www.youtube.com/watch?v=tPYj3fFJGjk">https://www.youtube.com/watch?v=tPYj3fFJGjk</a></p>
+</li>
 </ol>
-<p>The transcripts of these videos will be processed and stored in the vector database so that the model can answer questions about them.</p>
+<p>The transcripts from these videos are automatically retrieved using the <code>YoutubeLoader</code> in LangChain.<br/>
+The transcripts are then processed and stored in the vector database so that the model can answer questions about their content.</p>
 </div>
 </div>
 </div>
@@ -7851,30 +7858,6 @@ Classic: 1.0.3
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b895ef06">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="YouTube-Videos-Used">YouTube Videos Used<a class="anchor-link" href="#YouTube-Videos-Used">¶</a></h2><p>The following YouTube videos were used to test the question-answering system. These videos contain explanations related to artificial intelligence and machine learning concepts.</p>
-<ol>
-<li><p><strong>But what is a Neural Network? | Deep Learning, Chapter 1</strong><br/>
-<a href="https://www.youtube.com/watch?v=aircAruvnKk">https://www.youtube.com/watch?v=aircAruvnKk</a></p>
-</li>
-<li><p><strong>Gradient Descent, Step-by-Step</strong><br/>
-<a href="https://www.youtube.com/watch?v=IHZwWFHWa-w">https://www.youtube.com/watch?v=IHZwWFHWa-w</a></p>
-</li>
-<li><p><strong>Neural Networks and Deep Learning Overview</strong><br/>
-<a href="https://www.youtube.com/watch?v=tPYj3fFJGjk">https://www.youtube.com/watch?v=tPYj3fFJGjk</a></p>
-</li>
-</ol>
-<p>The transcripts from these videos are automatically retrieved using the <code>YoutubeLoader</code> in LangChain.<br/>
-The transcripts are then processed and stored in the vector database so that the model can answer questions about their content.</p>
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=eed25585">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8014,7 +7997,7 @@ The transcripts are then processed and stored in the vector database so that the
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=18f31530">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ac1f6ab9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
