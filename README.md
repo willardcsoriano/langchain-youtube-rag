@@ -27,22 +27,22 @@ This project builds a Retrieval-Augmented Generation (RAG) system capable of ans
 
 Install dependencies:
 
-\\\
+```
 pip install -r requirements.txt
-\\\
+```
 
 Run Ollama models:
 
-\\\
+```
 ollama pull llama3
 ollama pull nomic-embed-text
-\\\
+```
 
 Then run the Jupyter notebook.
 
 ## Project Structure
 
-\\\
+```
 project/
 │
 ├── notebook.ipynb
@@ -50,7 +50,7 @@ project/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-\\\
+```
 
 ## Author
-Your Name
+Willard Soriano
